@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--importerar bootstrap och jquery bibliotek -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/adminstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        //funktion för att visa vår addform
+        function showaddForm() {
+
+            $("#addform").slideToggle("slow");
+        }
+
+        //funktion som tilldelar varje textruta till respektive värde
+        function addButik() {
+            let lat = $("#addLat").val();
+            let lng = $("#addLng").val();
+            let butik = $("#addButik").val();
+            let bild = $("#addBild").val();
+            let fakta = $("#addFakta").val();
+            let sida = $("#addSida").val();
+            let idt = $("#addIdt").val();
+            let vader = $("#addVader").val();
+
+
+            $.post('./controller/AdminController.php', {
+                lat: lat,
+                lng: lng,
+                butik: butik,
+                bild: bild,
+                fakta: fakta,
+                sida: sida,
+                idt: idt,
+                vader: vader
+
+            }, function() {
+                alert("Du har lagt till en netonnet butik.")
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- här skapar vi upp inputs för våran addform så att man kan skriva in allt i respektive input -->
+    <div class="container">
+        <h2></h2>
+        <br>
+        <a class="myBtn" onclick="showaddForm()">Lägg till ny Netonnet butik</a>
+        <br>
+        <br>
+        <form method="post" style="width:25%" id="addform">
+            <input type="text" id="addLat" name="lat" class="form-control" placeholder="LAT"><br>
+            <input type="text" id="addLng" name="lng" class="form-control" placeholder="LONG"><br>
+            <input type="text" id="addButik" name="butik" class="form-control" placeholder="Namn"><br>
+            <input type="text" id="addBild" name="bild" class="form-control" placeholder="Bildurl"><br>
+            <input type="text" id="addFakta" name="fakta" class="form-control" placeholder="Fakta"><br>
+            <input type="text" id="addSida" name="sida" class="form-control" placeholder="URL"><br>
+            <input type="text" id="addIdt" name="idt" class="form-control" placeholder="ID"><br>
+            <input type="text" id="addVader" name="vader" class="form-control" placeholder="Skriv län/stad"><br>
+
+
+            <!-- Knapp för att lägga till i json och på karta samt en hemknapp-->
+            <a href="#" class="myBtn" onclick="addButik()">Lägg till</a>
+            <a href="./startsida.html" class="myBtn">Hem</a>
+
+
+        </form>
+        <br>
+        <br>
+
+        <br>
+
+        <table class="table table-striped" id="tblButik" style="width:30%"></table>
+
+
+    </div>
+
+
+</body>
+
+</html>

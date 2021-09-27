@@ -1,0 +1,275 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.848183,
+                    57.701567
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop Bor\u00e5s Viared",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https:www.netonnet.se\/",
+                "idt": "1234",
+                "vader": "Boras"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.656828,
+                    60.607372
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop Falun",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https:\/\/www.netonnet.se\/",
+                "idt": "12343",
+                "vader": "falun\/falun"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.990293,
+                    57.741811
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop G\u00f6teborg Hisings Backa",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https:\/\/www.netonnet.se\/",
+                "idt": "123311",
+                "vader": "goteborg\/goteborg"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.95325,
+                    57.726046
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop G\u00f6teborg Backaplan",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https:\/\/www.netonnet.se\/",
+                "idt": "211",
+                "vader": "goteborg\/goteborg"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.231498,
+                    57.785
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop J\u00f6nk\u00f6ping",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https:\/\/www.netonnet.se\/",
+                "idt": "2131",
+                "vader": "jonkoping\/jonkoping"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.430241,
+                    59.377367
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop Karlstad Bergvik",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https\/\/www.netonnet.se\/",
+                "idt": "21431",
+                "vader": "karlstad\/karlstad"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17.925699,
+                    59.497571
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop Stockholm Infracity",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https:\/\/www.netonnet.se\/",
+                "idt": "211431",
+                "vader": "stockholm\/stockholm"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.712984,
+                    57.13714
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop Ullared",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https:\/\/www.netonnet.se\/",
+                "idt": "411431",
+                "vader": "ullared\/ullared"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.169029,
+                    59.266389
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop \u00d6rebro",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https:\/\/www.netonnet.se\/",
+                "idt": "511431",
+                "vader": "orebro\/orebro"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17.559228,
+                    59.849298
+                ]
+            },
+            "properties": {
+                "butik": "Lagershop Uppsala Stenhagen",
+                "bild": "http:\/\/users.du.se\/~h16shmoh\/ik1056\/googlemaps\/img\/netonnet2.jpg",
+                "fakta": "Lagershop",
+                "sida": "https:\/\/www.netonnet.se\/",
+                "idt": "5511431",
+                "vader": "uppsala\/uppsala"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "butik": null,
+                "bild": null,
+                "fakta": null,
+                "sida": null,
+                "idt": null,
+                "vader": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "butik": null,
+                "bild": null,
+                "fakta": null,
+                "sida": null,
+                "idt": null,
+                "vader": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "butik": null,
+                "bild": null,
+                "fakta": null,
+                "sida": null,
+                "idt": null,
+                "vader": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "butik": null,
+                "bild": null,
+                "fakta": null,
+                "sida": null,
+                "idt": null,
+                "vader": null
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "butik": null,
+                "bild": null,
+                "fakta": null,
+                "sida": null,
+                "idt": null,
+                "vader": null
+            }
+        }
+    ]
+}

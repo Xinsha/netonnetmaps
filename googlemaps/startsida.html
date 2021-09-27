@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NETONNET LAGERSHOPS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <img id="img" src="img/netonnet.png" href="http://users.du.se/~h16shmoh/ik1056/googlemaps/index1.html" />
+        <!-- Knapp för att visa butiker -->
+        <button style="opacity: inherit" id="btnSearch">Ladda</button>
+        <a href="./views/loginForm.php" id="myBtn"> Logga in </a>
+        <br>
+
+        <!-- Stylea kartan -->
+        <div id="map" style="width:100%; height: 650px"></div>
+            <div class="ruttbox">
+                <div class="well">
+
+                    Start:<input type="text" id="start"><br> Slut:
+                    <input type="text" id="end"><br> Fordon:
+                    <br> <select id="mode">
+                            <option value="DRIVING">Bil</option>
+                            <option value="WALKING">Promenera</option>
+                            <option value="BICYCLING">Cykla</option>
+                            <option value="TRANSIT">Kollektivtrafik</option>
+                        </select>
+                    <br>
+                    <button onclick="visaVagBeskrivning()" id="ruttKnapp">Visa Rutt</button>
+                    <button onclick="taBortBeskrivning()" id="ruttKnapp">Ta bort Rutt</button>
+                </div>
+            </div>
+            <br>
+            <!-- Div där information visas -->
+            <div id="infobox" style="width: 58%"></div>
+            <br>
+            <br>
+        </div>
+
+
+    <!-- Inladdning av googlemaps api.  -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8xddWsHyZMw5YtPxO1DWynHA3oksEe_Y&callback=initMap&libraries=places">
+    </script>
+
+    <script>
+        var mymap;
+        //Funktionen initMap visar och skapar upp kartan
+        function initMap() {
+            mymap = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 60.488193,
+                    lng: 15.419048
+                },
+                zoom: 5
+            });
+        }
+
+        $("button").click(function() {
+            //fast way of just loading markers
+            mymap.data.loadGeoJson('data.json');
+            //creating mouseover for the data of the markers
+            //so we can show more info of the battle in a div
+            mymap.data.addListener('click', function(event) {
+                showButikInInfoWindow(event);
+                showTrip(event.feature.getProperty('destid'));
+                showMatPlatser(event.latLng);
+            });
+        });
+
+        //funktion för att visa all info om en butik
+        //funktion som visar popup-fönster i kartan. med bild samt latlong och butik
+        function showButikInInfoWindow(event) {
+            //showTrip(event.feature.getProperty('destid'));
+            bildString = "<img src=" + event.feature.getProperty('bild') + ">";
+            bildString += "<h4>" + event.feature.getProperty('butik') + "</h4>";
+            bildString += "<label>Lat: &nbsp;</label>" + event.feature.getGeometry().get().lat() + "<br>";
+            bildString += "<label>Lng: &nbsp;</label>" + event.feature.getGeometry().get().lng();
+            let infowindow = new google.maps.InfoWindow();
+            infowindow.setContent(bildString);
+
+            infowindow.setPosition(event.feature.getGeometry().get());
+            //anchor the infowindow on the marker
+            infowindow.setOptions({
+                pixelOffset: new google.maps.Size(-2, -25)
+            });
+            infowindow.open(mymap);
+
+        }
+    </script>
+</body>
+</html>

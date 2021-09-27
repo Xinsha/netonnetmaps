@@ -1,0 +1,93 @@
+#myBtn,
+#btnSearch {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    margin-left: 15px;
+    margin-top: auto;
+}
+
+#myBtn {
+    background-color: #8B0000;
+    color: white;
+}
+
+#ruttKnapp {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    margin-left: 10px;
+    margin-top: auto;
+}
+
+#myBtn:hover {
+    background-color: rgb(204, 0, 0);
+    color: white;
+}
+
+#btnSearch:hover {
+    background-color: #8B0000;
+    color: white;
+}
+
+#ruttKnapp:hover {
+    background-color: #8B0000;
+    color: white;
+}
+
+#container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    max-width: 99%;
+    margin-left: 5px;
+}
+
+#img {
+    float: left;
+    margin-top: -100px;
+    margin-left: 2px;
+}
+
+#origin-input,
+#destination-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+    border-color: #4d90fe;
+}
+
+.ruttbox {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.well {
+    outline: 1px ridge black;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
